@@ -14,7 +14,7 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body >
     <header class="border-header">
         <div class="main-nav container ">
         <nav class="site-nav">
@@ -50,7 +50,7 @@
 
         <section class="hero hero-section">
             <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br /> ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" class="primary-button">Замовити послугу</button>
+            <button type="button" class="primary-button" data-modal-open>Замовити послугу</button>
         </section>
 
         <section class="section-benefits section">
@@ -101,9 +101,12 @@
             <div class="container">
             <h2 class="section-work-title">Чим ми займаємося</h2>
             <ul class="list work-list">
-                <li><img src="./images/img1.jpg" alt="Чоловік працює за комп'ютером" width="370"></li>
-                <li><img src="./images/img2.jpg" alt="Чоловік розроблює мобільний додаток" width="370"></li>
-                <li><img src="./images/img3.jpg" alt="Чоловік на єкарні вибирає кольори" width="370"></li>
+                <li class="work-list-item"><img src="./images/img1.jpg" alt="Чоловік працює за комп'ютером" width="370">
+                <p class="work-list-overflow">Десктопні додатки</p></li>
+                <li class="work-list-item"><img src="./images/img2.jpg" alt="Чоловік розроблює мобільний додаток" width="370">
+                <p class="work-list-overflow">Мобільні додатки</p></li>
+                <li class="work-list-item"><img src="./images/img3.jpg" alt="Чоловік на єкарні вибирає кольори" width="370">
+                <p class="work-list-overflow">Дизайнерські рішення</p></li>
             </ul>
         </div>
         </section>
@@ -296,6 +299,18 @@
 
     </div></div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            
+                <button type="button" class="modal-close-btn" data-modal-close> <svg  class="close-btn-svg" width="11px" height="11px" >
+                    <use href="./images/sprite.svg#close"></use>
+                </svg></button>
+               
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 
 
